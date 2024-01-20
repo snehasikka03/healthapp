@@ -2,8 +2,10 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from django.contrib.auth import get_user_model
 
 
+    
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bloodbankmanagement.settings')
     try:
@@ -19,3 +21,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    User = get_user_model()
+    User.objects.create_superuser('admin', 'admin@gmail.com', 'pass')
