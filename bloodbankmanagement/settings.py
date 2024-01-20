@@ -144,9 +144,9 @@ USE_TZ = True
 # In Django, `STATIC_URL` is a setting that specifies the URL prefix for static files. It is used to
 # serve static files (such as CSS, JavaScript, and images) from the `STATIC_ROOT` directory.
 STATIC_URL = 'static/'
-STATICFILES_DIRS=[  
-     os.path.join(BASE_DIR,'static')
- ]
+# STATICFILES_DIRS=[  
+#      os.path.join(BASE_DIR,'static')
+#  ]
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 LOGIN_REDIRECT_URL='/afterlogin'
 
