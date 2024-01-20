@@ -151,10 +151,14 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 LOGIN_REDIRECT_URL='/afterlogin'
 
 STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     }
 }
+
 
 #for contact us give your gmail id and password
 EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
