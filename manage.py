@@ -21,5 +21,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    User = get_user_model()
-    User.objects.create_superuser('admin-12', 'admin@gmail.com', 'pass')
+    # User = get_user_model()
+    # User.objects.create_superuser('admin-12', 'admin@gmail.com', 'pass')
