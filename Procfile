@@ -1,1 +1,1 @@
-web: gunicorn healthapp.wsgi
+web: gunicorn arogya.wsgi
