@@ -19,6 +19,7 @@ from django.contrib.auth.views import LogoutView,LoginView
 from blood import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -48,4 +49,4 @@ urlpatterns = [
     path('update-approve-status/<int:pk>', views.update_approve_status_view,name='update-approve-status'),
     path('update-reject-status/<int:pk>', views.update_reject_status_view,name='update-reject-status'),
    
-]
+] + staticfiles_urlpatterns()
