@@ -1,1 +1,2 @@
-web: gunicorn arogya.wsgi
+release: python manage.py migrate
+web: gunicorn healthapp.wsgi
